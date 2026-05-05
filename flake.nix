@@ -18,6 +18,7 @@
             python3Packages.venvShellHook
             python3Packages.pip
             just
+            pyright
           ];
 
           env.LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
