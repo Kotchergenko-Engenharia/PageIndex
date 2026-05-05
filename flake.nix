@@ -20,6 +20,10 @@
             just
           ];
 
+          env.LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
+            pkgs.stdenv.cc.cc
+          ];
+
           # Where the venv will live
           venvDir = ".venv";
 
